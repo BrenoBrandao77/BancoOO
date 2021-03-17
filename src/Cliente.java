@@ -13,6 +13,9 @@ public class Cliente {
     private List<Endereco> listaendereco = new ArrayList<Endereco>();
 
     private void listarEndereco(){
+        for(Endereco endereco : this.getListaendereco()){
+            System.out.println(endereco.getLogradouro() +" "+ endereco.getNumero() + " " + endereco.getComplemento());
+        }
 
     }
 
